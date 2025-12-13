@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kontakt - RB Consulting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#002366", // Royal Blue
+              secondary: "#D4AF37", // Gold
+              "background-light": "#F9FAFB",
+              "background-dark": "#111827",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1F2937",
+              "text-light": "#333333",
+              "text-dark": "#E5E7EB",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              body: ["Lato", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.375rem",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body transition-colors duration-300">
+<nav class="sticky top-0 z-50 bg-primary shadow-lg border-b-4 border-secondary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<div class="flex-shrink-0 flex items-center">
+<span class="font-display font-bold text-2xl text-white tracking-wider">RB <span class="text-secondary">Consulting</span></span>
+</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition" href="#">Startseite</a>
+<a class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition" href="#">Leistungen</a>
+<a class="text-gray-300 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition" href="#">Über Uns</a>
+<a class="text-white bg-secondary/90 hover:bg-secondary px-5 py-2 rounded text-sm font-bold transition shadow-md" href="#">Kontakt</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-white hover:text-secondary focus:outline-none">
+<span class="material-icons-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative bg-primary py-24 sm:py-32">
+<div class="absolute inset-0 overflow-hidden">
+<img alt="Modernes Bürogebäude in Baden-Württemberg" class="w-full h-full object-cover object-center opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjHLjT7on2673W0PAhsBjG3po3OUigF5omJZ_bBWYJxzgEQYWikiCF0DQdvfi2FG6qaEkJ3c2h3GuqnaJCCeom046Wm3Cf42NHtLh_Fafmf6xvWfUiJe8CX4vmB0cEG9Y9voIY1iCorCrlZOVGlVabANeDqtyNLpQAOMprtva3sbC2Mrrt-QZfP_aYOSM1ORUpZ9Ej6TiYUusiqO74v6_dCsICHsdG_bkgunVMM_F2disQxHIWO-zdIsfvcdHPruKDyJUvOn20q9CU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="text-4xl font-display font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
+                Kontaktieren Sie uns
+            </h1>
+<p class="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
+                Ihr Partner für Finanzen und Versicherungen in Baden-Württemberg. Lassen Sie uns gemeinsam Ihre Zukunft gestalten.
+            </p>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10 pb-20">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-1 space-y-6">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl p-8 border-t-4 border-secondary">
+<h3 class="text-2xl font-display font-bold text-primary dark:text-white mb-6">Kontaktdaten</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<span class="material-icons-outlined text-secondary text-2xl">location_on</span>
+</div>
+<div class="ml-4">
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Adresse</p>
+<p class="text-lg text-gray-900 dark:text-white">Königstraße 123<br/>70173 Stuttgart</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<span class="material-icons-outlined text-secondary text-2xl">phone</span>
+</div>
+<div class="ml-4">
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">Telefon</p>
+<p class="text-lg text-gray-900 dark:text-white hover:text-secondary transition cursor-pointer">+49 711 1234567</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0">
+<span class="material-icons-outlined text-secondary text-2xl">email</span>
+</div>
+<div class="ml-4">
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">E-Mail</p>
+<p class="text-lg text-gray-900 dark:text-white hover:text-secondary transition cursor-pointer">info@rb-consulting.de</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Folgen Sie uns</p>
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-secondary transition" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-secondary transition" href="#">
+<span class="sr-only">Xing</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.7 21h-3.6l-5.6-9.8 4.2-7.5h3.6l-4.2 7.5zM6.9 8.2l-2.4-4.2h3.6l2.4 4.2z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl overflow-hidden relative">
+<img alt="Consultant shaking hands" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL2RRPqAWwdjIPaJWjwCFQaB2Vl-4VmpvuGYnJJ6t1jOxb-I7y0T8F3q5LktKNI0W6E8wJXFEfNbxmfsUpRuDGntTe5cxCeIWkdJpGapyhZiA86TPuIaGqySmQGzb4vNRgLRNqg8llViGgUyScJReLLDFgzGYHH2U420Ky715Dexv3JFpEYKloCZ-GpXxY0KgpJrXUPZdwApUwHpMid45J0xuPrHw9JBxEwmc-pMfhA7hwZ-MnqasvsXU1-ld2T_uZNdO1ni6yIjws"/>
+<div class="p-6">
+<blockquote class="text-gray-700 dark:text-gray-300 italic mb-4">
+                            "Unser Ziel ist es, Ihnen Sicherheit und Wohlstand durch maßgeschneiderte Beratung zu bieten."
+                        </blockquote>
+<div class="flex items-center">
+<div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xs">RB</div>
+<div class="ml-3">
+<p class="text-sm font-medium text-gray-900 dark:text-white">Ralf B.</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Geschäftsführer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 space-y-8">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow-xl p-8 lg:p-10">
+<h2 class="text-3xl font-display font-bold text-primary dark:text-white mb-2">Schreiben Sie uns</h2>
+<p class="text-gray-600 dark:text-gray-400 mb-8">Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+<form action="#" class="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2" method="POST">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="first-name">Vorname</label>
+<div class="mt-1">
+<input autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm focus:ring-secondary focus:border-secondary border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-white" id="first-name" name="first-name" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="last-name">Nachname</label>
+<div class="mt-1">
+<input autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm focus:ring-secondary focus:border-secondary border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-white" id="last-name" name="last-name" type="text"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Email</label>
+<div class="mt-1">
+<input autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-secondary focus:border-secondary border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-white" id="email" name="email" type="email"/>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="subject">Betreff</label>
+<div class="mt-1">
+<select class="py-3 px-4 block w-full shadow-sm focus:ring-secondary focus:border-secondary border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-white" id="subject" name="subject">
+<option>Allgemeine Anfrage</option>
+<option>Versicherungsberatung</option>
+<option>Finanzplanung</option>
+<option>Terminwunsch</option>
+</select>
+</div>
+</div>
+<div class="sm:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="message">Nachricht</label>
+<div class="mt-1">
+<textarea class="py-3 px-4 block w-full shadow-sm focus:ring-secondary focus:border-secondary border-gray-300 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-white" id="message" name="message" rows="4"></textarea>
+</div>
+</div>
+<div class="sm:col-span-2">
+<div class="flex items-start">
+<div class="flex-shrink-0 h-5">
+<input class="focus:ring-secondary h-4 w-4 text-primary border-gray-300 rounded" id="privacy" name="privacy" type="checkbox"/>
+</div>
+<div class="ml-3">
+<p class="text-sm text-gray-500 dark:text-gray-400">
+                                        Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und Zuordnung für eventuelle Rückfragen dauerhaft gespeichert werden.
+                                        <a class="font-medium text-primary hover:text-secondary dark:text-secondary dark:hover:text-yellow-300" href="#">Datenschutzbestimmungen</a>.
+                                    </p>
+</div>
+</div>
+</div>
+<div class="sm:col-span-2">
+<button class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-bold text-white bg-primary hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-200" type="submit">
+                                Nachricht senden
+                                <span class="material-icons-outlined ml-2">send</span>
+</button>
+</div>
+</form>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-inner border border-gray-200 dark:border-gray-700 p-8">
+<div class="text-center mb-6">
+<h2 class="text-2xl font-display font-bold text-primary dark:text-white">Direkt Termin vereinbaren</h2>
+<p class="mt-2 text-gray-600 dark:text-gray-300">Wählen Sie einen passenden Zeitpunkt für ein unverbindliches Erstgespräch.</p>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-lg shadow-md border border-gray-200 dark:border-gray-600 overflow-hidden">
+<div class="p-4 border-b border-gray-200 dark:border-gray-600 flex items-center justify-between bg-gray-50 dark:bg-gray-700">
+<div class="flex items-center space-x-2">
+<div class="h-8 w-8 rounded-full bg-secondary flex items-center justify-center text-white font-bold text-xs">RB</div>
+<span class="font-bold text-gray-700 dark:text-gray-200">30 Min. Erstberatung</span>
+</div>
+<span class="text-xs text-gray-500 dark:text-gray-400">Powered by Calendly</span>
+</div>
+<div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<h4 class="font-bold text-center mb-4 text-gray-800 dark:text-white">Oktober 2023</h4>
+<div class="grid grid-cols-7 gap-1 text-center text-sm">
+<span class="text-gray-400">Mo</span><span class="text-gray-400">Di</span><span class="text-gray-400">Mi</span><span class="text-gray-400">Do</span><span class="text-gray-400">Fr</span><span class="text-gray-400">Sa</span><span class="text-gray-400">So</span>
+<span class="p-2 text-gray-300">25</span><span class="p-2 text-gray-300">26</span><span class="p-2 text-gray-300">27</span><span class="p-2 text-gray-300">28</span><span class="p-2 text-gray-300">29</span><span class="p-2 text-gray-300">30</span><span class="p-2">1</span>
+<span class="p-2 hover:bg-gray-100 rounded cursor-pointer dark:hover:bg-gray-700 dark:text-gray-200">2</span>
+<span class="p-2 bg-blue-100 text-primary font-bold rounded-full cursor-pointer dark:bg-primary dark:text-white">3</span>
+<span class="p-2 hover:bg-gray-100 rounded cursor-pointer dark:hover:bg-gray-700 dark:text-gray-200">4</span>
+<span class="p-2 hover:bg-gray-100 rounded cursor-pointer dark:hover:bg-gray-700 dark:text-gray-200">5</span>
+<span class="p-2 hover:bg-gray-100 rounded cursor-pointer dark:hover:bg-gray-700 dark:text-gray-200">6</span>
+<span class="p-2 text-gray-300">7</span><span class="p-2 text-gray-300">8</span>
+</div>
+</div>
+<div class="flex flex-col space-y-3 justify-center">
+<span class="text-sm text-gray-500 dark:text-gray-400 text-center mb-2">Dienstag, 3. Oktober</span>
+<button class="w-full border border-primary text-primary dark:border-secondary dark:text-secondary hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-primary py-2 rounded transition font-bold">09:00 Uhr</button>
+<button class="w-full border border-primary text-primary dark:border-secondary dark:text-secondary hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-primary py-2 rounded transition font-bold">11:30 Uhr</button>
+<button class="w-full border border-primary text-primary dark:border-secondary dark:text-secondary hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-primary py-2 rounded transition font-bold">14:00 Uhr</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<section class="w-full h-96 bg-gray-200 dark:bg-gray-700 relative">
+<div class="absolute inset-0 flex items-center justify-center">
+<img alt="Map background abstract" class="w-full h-full object-cover opacity-40 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjefLm0Fx3Zjnew09GN81bYtPk99dqbY8A8toEpdr41T7bYMgv0W2DdQkITQT9-gjuTArqU2V-9OqgK9dXXLEjJJdk_iVREWkjRXBQBtn-lkqr66_ZKAfhpOioq5wYpPcOS3T4FW_M1W47-u5Ky1l-Zb2wlYXVU_gOMP3kF5EHK7b6kwhpEZeldxg6q3qnraynfa0rJHX8zBPbWgrFKcA2SPx0Ng6aNPJtWAiRcr1QU9XmpFtrH-rv9dahVGdB9P8fVqUDULbyw7qH"/>
+<div class="absolute bg-white dark:bg-surface-dark p-6 rounded-lg shadow-xl text-center">
+<span class="material-icons-outlined text-primary text-4xl mb-2">map</span>
+<p class="text-gray-800 dark:text-white font-bold">Hier finden Sie uns</p>
+<button class="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-blue-900 transition">Route planen</button>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white border-t-4 border-secondary">
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<span class="font-display font-bold text-2xl text-white tracking-wider">RB <span class="text-secondary">Consulting</span></span>
+<p class="mt-4 text-gray-400 text-sm">
+                        Kompetente Beratung für Ihre finanzielle Sicherheit in Baden-Württemberg. Vertrauen Sie auf Erfahrung und Transparenz.
+                    </p>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-secondary tracking-wider uppercase">Rechtliches</h3>
+<ul class="mt-4 space-y-4">
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Impressum</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Datenschutz</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Erstinformation</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-secondary tracking-wider uppercase">Kontakt</h3>
+<ul class="mt-4 space-y-4">
+<li class="flex items-center text-gray-300">
+<span class="material-icons-outlined text-sm mr-2 text-secondary">email</span>
+                             info@rb-consulting.de
+                        </li>
+<li class="flex items-center text-gray-300">
+<span class="material-icons-outlined text-sm mr-2 text-secondary">phone</span>
+                            +49 711 1234567
+                       </li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+<p class="text-base text-gray-400">© 2023 RB Consulting. Alle Rechte vorbehalten.</p>
+</div>
+</div>
+</footer>
+
+</body></html>
