@@ -16,8 +16,8 @@
             <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-200 text-sm font-bold mb-6 tracking-wide uppercase border border-blue-200 dark:border-blue-800">
                 Kontakt mit uns aufnehmen
             </div>
-            <h1 class="text-4xl lg:text-6xl font-display font-black text-gray-900 dark:text-white leading-tight mb-6">
-                Schreiben Sie uns <span class="text-primary">eine Nachricht</span>
+            <h1 class="text-4xl lg:text-6xl font-display font-black leading-tight mb-6">
+                <span style="color: rgba(226, 235, 255, 1);">Schreiben Sie uns</span> <span style="color: rgba(147, 197, 253, 1);">eine Nachricht</span>
             </h1>
             <p class="text-lg text-white mb-8 leading-relaxed">
                 Haben Sie Fragen oder möchten mehr über unsere Dienstleistungen erfahren? Füllen Sie einfach das Formular aus und wir melden uns bald bei Ihnen.

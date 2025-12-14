@@ -4,23 +4,20 @@
 
 @section('content')
 <header class="relative bg-surface-light dark:bg-surface-dark overflow-hidden" style="background-image: url('/photos/hero-bg-custom.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-r from-white/40 via-white/20 to-transparent dark:from-background-dark/80 dark:via-background-dark/60 dark:to-background-dark/20 z-10"></div>
-    </div>
     <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 flex flex-col md:flex-row items-center">
         <div class="w-full md:w-1/2 space-y-6 relative">
-            <!-- Gradient overlay mask behind text -->
-            <div class="absolute -inset-8 bg-white/30 dark:bg-gray-900/40 rounded-3xl -z-10 blur-2xl"></div>
+            <!-- Faded white background for text area -->
+            <div class="absolute -inset-8 bg-white/15 dark:bg-gray-900/30 rounded-3xl -z-10 blur-2xl"></div>
 
             <div class="inline-block px-3 py-1 bg-secondary/20 dark:bg-secondary/10 text-primary-dark dark:text-secondary rounded-full text-sm font-semibold tracking-wide uppercase">
                 Experten für Finanzen &amp; Versicherung
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight text-gray-900 dark:text-white drop-shadow-lg">
-                Kompetenz.<br/>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight drop-shadow-lg">
+                <span style="color: rgba(226, 235, 255, 1);">Kompetenz.</span><br/>
                 <span class="text-primary">Vertrauen.</span><br/>
-                Erfolg.
+                <span style="color: rgba(226, 235, 255, 1);">Erfolg.</span>
             </h1>
-            <p class="text-lg text-white max-w-lg leading-relaxed drop-shadow">
+            <p class="text-xl text-white max-w-lg leading-relaxed drop-shadow">
                 Seit über 20 Jahren Ihr verlässlicher Partner in Baden-Württemberg. Wir entwickeln maßgeschneiderte Finanzstrategien, die Ihre Zukunft sichern.
             </p>
             <div class="pt-4 flex flex-wrap gap-4">

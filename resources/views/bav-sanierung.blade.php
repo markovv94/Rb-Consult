@@ -19,8 +19,8 @@
                 <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-200 text-sm font-bold mb-6 tracking-wide uppercase border border-blue-200 dark:border-blue-800">
                     Für Unternehmen
                 </div>
-                <h1 class="text-4xl lg:text-6xl font-display font-black text-gray-900 dark:text-white leading-tight mb-6 drop-shadow-lg">
-                    BAV-Sanierung für <br class="hidden lg:block"/><span class="text-primary">sichere Altersversorgung</span>
+                <h1 class="text-4xl lg:text-6xl font-display font-black leading-tight mb-6 drop-shadow-lg">
+                    <span style="color: rgba(226, 235, 255, 1);">BAV-Sanierung für</span> <br class="hidden lg:block"/><span class="text-primary">sichere Altersversorgung</span>
                 </h1>
                 <p class="text-lg text-white mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed drop-shadow">
                     Die betriebliche Altersversorgung ist eine wichtige Säule der Mitarbeiterbindung. Wir helfen Ihnen, potenzielle Probleme zu erkennen und Ihre BAV-Struktur zukunftssicher zu gestalten.

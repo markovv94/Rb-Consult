@@ -19,8 +19,8 @@
                 <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-200 text-sm font-bold mb-6 tracking-wide uppercase border border-blue-200 dark:border-blue-800">
                     Rentenversicherungen zurückabwickeln
                 </div>
-                <h1 class="text-4xl lg:text-6xl font-display font-black text-gray-900 dark:text-white leading-tight mb-6">
-                    Zusatzrente sichern <br class="hidden lg:block"/>mit <span class="text-primary">Rückabwicklung</span>
+                <h1 class="text-4xl lg:text-6xl font-display font-black leading-tight mb-6">
+                    <span style="color: rgba(226, 235, 255, 1);">Zusatzrente sichern</span> <br class="hidden lg:block"/><span style="color: rgba(226, 235, 255, 1);">mit</span> <span class="text-primary">Rückabwicklung</span>
                 </h1>
                 <p class="text-lg text-white mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                     Private Rentenversicherungen aus früheren Jahren enthalten häufig unzureichende Widerrufsbelehrungen. Wir prüfen Ihre Verträge kostenlos und zeigen Ihnen, wie Sie durch eine Rückabwicklung Ihre Altersvorsorge optimieren können.

@@ -144,16 +144,172 @@
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-                <p>© 2024 RB Consulting. Alle Rechte vorbehalten.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a class="hover:text-gray-300" href="#">Impressum</a>
-                    <a class="hover:text-gray-300" href="#">Datenschutz</a>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+                <p>© 2025 RB Consulting. Alle Rechte vorbehalten.</p>
+                <div class="flex space-x-6">
+                    <a class="hover:text-gray-300" href="{{ route('impressum') }}">Impressum</a>
+                    <a class="hover:text-gray-300" href="{{ route('datenschutz') }}">Datenschutz</a>
                     <a class="hover:text-gray-300" href="#">Erstinformation</a>
                 </div>
+                <p class="text-center md:text-right">Made with <span class="text-green-500">💚</span> by <a href="https://webwizr.eu" target="_blank" class="hover:text-gray-300 transition text-gray-500 hover:underline">WebWizr</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Phone Widget -->
+    <div id="phoneWidget" class="fixed bottom-6 right-6 z-40 group">
+        <!-- Ringing Phone Button -->
+        <button id="phoneButton" onclick="togglePhoneModal()" class="relative w-16 h-16 rounded-full bg-secondary hover:bg-yellow-600 text-white shadow-2xl transition-all duration-300 flex items-center justify-center animate-bounce">
+            <span id="phoneIcon" class="material-icons text-3xl">phone</span>
+            <!-- Ringing Animation Ring -->
+            <span class="absolute w-16 h-16 rounded-full border-4 border-secondary animate-pulse opacity-75"></span>
+            <span class="absolute w-20 h-20 rounded-full border-2 border-secondary animate-pulse opacity-50 animation-delay-200"></span>
+        </button>
+
+        <!-- Phone Modal (Initially Hidden) -->
+        <div id="phoneModal" class="hidden fixed bottom-24 right-6 bg-white dark:bg-surface-dark rounded-2xl shadow-2xl overflow-hidden w-80 border border-gray-200 dark:border-gray-700 animate-in fade-in slide-in-from-bottom-4 duration-300">
+            <!-- Phone Header -->
+            <div class="bg-gradient-to-r from-secondary to-yellow-500 p-6 text-white">
+                <h3 class="text-2xl font-bold font-display mb-2">RB Consulting</h3>
+                <p class="text-sm opacity-90">Rufen Sie uns jetzt an</p>
+            </div>
+
+            <!-- Phone Content -->
+            <div class="p-6 space-y-6">
+                <!-- Phone Number Display -->
+                <div class="text-center">
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-2">Telefonnummer</p>
+                    <p class="text-3xl font-bold text-primary dark:text-blue-300 font-display">+49 711 123 456</p>
+                </div>
+
+                <!-- Call Button -->
+                <a href="tel:+49711123456" class="flex items-center justify-center gap-3 w-full bg-primary hover:bg-blue-800 text-white px-6 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    <span class="material-icons">call</span>
+                    <span>Jetzt anrufen</span>
+                </a>
+
+                <!-- Close Button -->
+                <button onclick="togglePhoneModal()" class="w-full text-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 py-2 transition font-medium">
+                    Schließen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes vibrate {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(-2px, -2px) rotate(-1deg); }
+            50% { transform: translate(2px, 2px) rotate(1deg); }
+            75% { transform: translate(-2px, 2px) rotate(-1deg); }
+        }
+
+        @keyframes ring {
+            0%, 100% { transform: rotate(0deg); }
+            10% { transform: rotate(-15deg); }
+            20% { transform: rotate(15deg); }
+            30% { transform: rotate(-15deg); }
+            40% { transform: rotate(15deg); }
+            50% { transform: rotate(0deg); }
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: slideInFromBottom 0.3s ease-out;
+        }
+
+        .phone-vibrate {
+            animation: vibrate 0.5s infinite;
+        }
+
+        .phone-ring {
+            animation: ring 0.6s infinite;
+        }
+
+        .animation-delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        @keyframes phoneRing {
+            0%, 100% { transform: rotate(0deg); }
+            15% { transform: rotate(-15deg); }
+            30% { transform: rotate(15deg); }
+            45% { transform: rotate(-10deg); }
+            60% { transform: rotate(10deg); }
+            75% { transform: rotate(-5deg); }
+            90% { transform: rotate(5deg); }
+        }
+
+        .phone-icon-ring {
+            animation: phoneRing 0.6s infinite;
+            transform-origin: center center;
+        }
+    </style>
+
+    <script>
+        let phoneModalOpen = false;
+        const phoneButton = document.getElementById('phoneButton');
+        const phoneIcon = document.getElementById('phoneIcon');
+        const phoneModal = document.getElementById('phoneModal');
+        let ringInterval;
+
+        function togglePhoneModal() {
+            phoneModalOpen = !phoneModalOpen;
+            if (phoneModalOpen) {
+                phoneModal.classList.remove('hidden');
+                phoneButton.classList.remove('phone-vibrate');
+                phoneIcon.classList.remove('phone-icon-ring');
+                if (ringInterval) clearInterval(ringInterval);
+            } else {
+                phoneModal.classList.add('hidden');
+                startRingCycle();
+            }
+        }
+
+        function startRingCycle() {
+            if (phoneModalOpen) return; // Don't ring if modal is open
+
+            // Ring for 3 seconds
+            phoneButton.classList.add('phone-vibrate');
+            phoneIcon.classList.add('phone-icon-ring');
+
+            setTimeout(() => {
+                if (!phoneModalOpen) {
+                    phoneButton.classList.remove('phone-vibrate');
+                    phoneIcon.classList.remove('phone-icon-ring');
+
+                    // Silent for 6 seconds
+                    setTimeout(() => {
+                        if (!phoneModalOpen) {
+                            startRingCycle(); // Start again
+                        }
+                    }, 6000);
+                }
+            }, 3000);
+        }
+
+        // Start ringing cycle after 5 seconds
+        setTimeout(() => {
+            if (!phoneModalOpen) {
+                startRingCycle();
+            }
+        }, 5000);
+
+        // Stop vibration when modal is opened
+        phoneButton.addEventListener('click', () => {
+            phoneButton.classList.remove('phone-vibrate');
+        });
+    </script>
 
     @yield('scripts')
 </body>

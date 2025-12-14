@@ -16,8 +16,8 @@
             <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-200 text-sm font-bold mb-6 tracking-wide uppercase border border-blue-200 dark:border-blue-800">
                 Vereinbaren Sie einen Termin
             </div>
-            <h1 class="text-4xl lg:text-6xl font-display font-black text-gray-900 dark:text-white leading-tight mb-6">
-                Kostenlose <span class="text-primary">Beratung</span> vereinbaren
+            <h1 class="text-4xl lg:text-6xl font-display font-black leading-tight mb-6">
+                <span style="color: rgba(226, 235, 255, 1);">Kostenlose</span> <span style="color: rgba(147, 197, 253, 1);">Beratung</span> <span style="color: rgba(226, 235, 255, 1);">vereinbaren</span>
             </h1>
             <p class="text-lg text-white mb-8 leading-relaxed">
                 Wählen Sie einen Termin, der zu Ihnen passt. Unsere Experten beantworten all Ihre Fragen zur Rückabwicklung, Geldanlage oder betrieblichen Altersversorgung.

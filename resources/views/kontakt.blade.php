@@ -3,21 +3,19 @@
 @section('title', 'Kontakt')
 
 @section('content')
-<header class="relative bg-primary py-24 sm:py-32">
-    <div class="absolute inset-0 overflow-hidden">
-        <img alt="Modernes Bürogebäude in Baden-Württemberg" class="w-full h-full object-cover object-center opacity-20" src="/photos/office.png"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <!-- Gradient overlay mask behind text -->
-        <div class="absolute -inset-8 bg-gradient-to-br from-white/20 via-secondary/10 to-transparent dark:from-white/10 dark:via-secondary/5 dark:to-transparent rounded-3xl -z-10 blur-2xl"></div>
+<header class="relative bg-surface-light dark:bg-surface-dark overflow-hidden" style="background-image: url('/photos/hero-bg-custom.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div class="max-w-3xl mx-auto text-center relative">
+            <!-- Faded white background for text area -->
+            <div class="absolute -inset-8 bg-white/15 dark:bg-gray-900/30 rounded-3xl -z-10 blur-2xl"></div>
 
-        <h1 class="text-4xl font-display font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6 drop-shadow-lg">
-            Kontaktieren Sie uns
-        </h1>
-        <p class="mt-6 text-xl text-gray-300 max-w-3xl mx-auto drop-shadow">
-            Ihr Partner für Finanzen und Versicherungen in Baden-Württemberg. Lassen Sie uns gemeinsam Ihre Zukunft gestalten.
-        </p>
+            <h1 class="text-4xl lg:text-6xl font-display font-bold leading-tight mb-6 drop-shadow-lg">
+                <span style="color: rgba(226, 235, 255, 1);">Kontaktieren Sie</span> <span style="color: rgba(147, 197, 253, 1);">uns</span>
+            </h1>
+            <p class="text-lg text-white max-w-2xl mx-auto leading-relaxed drop-shadow">
+                Ihr Partner für Finanzen und Versicherungen in Baden-Württemberg. Lassen Sie uns gemeinsam Ihre Zukunft gestalten.
+            </p>
+        </div>
     </div>
 </header>
 

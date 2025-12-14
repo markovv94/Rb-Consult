@@ -3,16 +3,16 @@
 @section('title', 'Impressum - RB Consulting')
 
 @section('content')
-@component('components.breadcrumb', ['items' => [
-    ['name' => 'Startseite', 'url' => route('home')],
-    ['name' => 'Impressum', 'url' => null]
-]])
-@endcomponent
-
-<section class="py-12 bg-gray-50 dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
+<section class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:bg-gradient-to-r dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl lg:text-4xl font-display font-bold text-gray-900 dark:text-white">Impressum</h1>
-        <p class="text-gray-600 dark:text-gray-400 mt-2">Gesetzliche Informationen und Angaben</p>
+        <div class="mb-6">
+            <nav class="flex items-center space-x-2 text-sm text-gray-400">
+                <a href="{{ route('home') }}" class="hover:text-gray-200 transition">Startseite</a>
+                <span class="text-gray-600">></span>
+                <span class="text-gray-200">Impressum</span>
+            </nav>
+        </div>
+        <h1 class="text-5xl lg:text-6xl font-display font-bold text-white leading-tight">Impressum</h1>
     </div>
 </section>
 
