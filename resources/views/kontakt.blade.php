@@ -123,15 +123,4 @@
         </div>
     </div>
 </main>
-
-<section class="w-full h-96 bg-gray-200 dark:bg-gray-700 relative">
-    <div class="absolute inset-0 flex items-center justify-center">
-        <img alt="Map background abstract" class="w-full h-full object-cover opacity-40 grayscale" src="/photos/map.png"/>
-        <div class="absolute bg-white dark:bg-surface-dark p-6 rounded-lg shadow-xl text-center">
-            <span class="material-icons-outlined text-primary text-4xl mb-2 block">map</span>
-            <p class="text-gray-800 dark:text-white font-bold">Hier finden Sie uns</p>
-            <button class="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-blue-900 transition">Route planen</button>
-        </div>
-    </div>
-</section>
 @endsection
